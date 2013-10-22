@@ -1,0 +1,13 @@
+WPC = 4;      % warunek pocz¹tkowy
+R = 10;       % opór [Om]
+C = 0.1;      % pojemnoœæ [F]
+K = -1/(R*C); % sta³a przy równaniu ró¿niczkowym
+
+open('ModelRC') % otwórz model simulinki
+sim('ModelRC')  % uruchom symulacjê
+
+plot(tout, x) % utwórz wykres i go sformatuj
+title('Symulacja obwodu RC') % tytu³
+xlabel('Czas [s]') % oœ x
+ylabel('Napiêcie [V]') % oœ y
+grid on % siatka

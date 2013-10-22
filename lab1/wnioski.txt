@@ -1,0 +1,11 @@
+Symulacja przedstawia zmianê napiêcia zachodz¹c¹ na kondensatorze w obwodzie RC dla sterowania u(t) = 0. Równanie opisuj¹ce obwód ma postaæ:
+  x'(t) = (-1/RC)*x(t)
+gdzie x oznaczamy napiêcie.
+
+Rozwi¹zanie równania uk³adu RC dla ka¿dego t>=0 ma postaæ:
+  x(t) = e^(-t/RC) * x(0)
+
+Jest to przekszta³cona krzywa funkcji e^t, co wykazuje symulacja.
+Warunek pocz¹tkowy x(0) oznacza napiêcie pocz¹tkowe na kondensatorze, zanim nast¹pi spadek napiêcia. Wartoœæ x(0) skaluje krzyw¹ w pionie, a-krotne zmiana x(0) powoduje a-krotne przeskalowanie krzywej w pionie.
+Im mniejsza wartoœæ oporu R, tym bardziej stroma staje siê krzywa (poniewa¿ szybciej p³ynie pr¹d, to kondensator szybciej siê ³aduje).
+Dok³adnie to samo co zmiana oporu powoduje zmiana pojemnoœci C - im mniejsza pojemnoœæ kondensatora, tym szybciej zostanie na³adowany do danej wartoœci.
